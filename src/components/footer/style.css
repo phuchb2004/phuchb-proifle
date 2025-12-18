@@ -1,10 +1,10 @@
 .footer-container {
-    background-color: #000000;
+    background-color: #8594e4;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 100px 20px 100px;
 }
 
 /* Address */
