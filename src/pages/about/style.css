@@ -1,11 +1,22 @@
 .about-container {
     background-color: #FFFFFF;
     display: flex;
+    flex-direction: column;
+    padding: 50px 10%;
+    gap: 80px;
+    min-height: 80vh;
+}
+
+.about-general {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
     gap: 50px;
-    min-height: 80vh;
+    width: 100%;
+}
+
+.about-sport {
+    width: 100%;
 }
 
 .about-left, .about-right {
@@ -121,7 +132,7 @@
 .social-links a {
     font-size: 2rem;
     color: #000000;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .social-links a:hover {
@@ -156,17 +167,25 @@
 
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column;
         padding: 40px 20px;
+    }
+
+    .about-general {
+        flex-direction: column;
         text-align: center;
-        gap: 30px;
+        gap: 40px;
     }
 
     .about-img-wrapper img {
-        width: 250px;
+        width: 80%;
+        max-width: 300px;
     }
 
     .skills-grid {
         justify-content: center;
+    }
+
+    .about-right h1 {
+        font-size: 2.2rem;
     }
 }
