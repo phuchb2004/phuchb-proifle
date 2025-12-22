@@ -20,7 +20,7 @@ export default function Experience() {
                 setLoading(false);
             }
             catch (error) {
-                console.error("Lỗi, không lấy được data", error);
+                console.error("Lỗi, không lấy được data Experience", error);
                 setError(error.message)
             }
         }
