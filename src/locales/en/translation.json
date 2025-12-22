@@ -6,6 +6,8 @@
             "about": "About",
             "experience": "Experience",
             "education": "Education",
+            "technology": "Technology",
+            "donation": "Donation",
             "languages": {
                 "en": "EN",
                 "vi": "VI"
@@ -83,6 +85,12 @@
         "major": "Major: Information Technology",
         "rating": "Degree Classification: Good",
         "project": "Capstone Project: Clothing Store"
+    },
+    "technology": {
+        "title": "Technologies I used"
+    },
+    "donation": {
+        "title": "Donate me"
     },
     "modal": {
         "contactEmail": {

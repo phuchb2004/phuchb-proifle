@@ -6,6 +6,8 @@
             "about": "Giới thiệu",
             "experience": "Kinh nghiệm",
             "education": "Học vấn",
+            "technology": "Công nghệ",
+            "donation": "Ủng hộ",
             "languages": {
                 "en": "EN",
                 "vi": "VI"
@@ -83,6 +85,12 @@
         "major": "Chuyên ngành: Công nghệ thông tin",
         "rating": "Tốt nghiệp loại Khá",
         "project": "Đồ án: Shop quần áo"
+    },
+    "technology": {
+        "title": "Technologies I used"
+    },
+    "donation": {
+        "title": "Donate me"
     },
     "modal": {
         "contactEmail": {

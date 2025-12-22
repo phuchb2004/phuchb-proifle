@@ -64,6 +64,20 @@ export default function Header() {
                 >
                     {t('header.menu.education')}
                 </NavLink>
+                <NavLink
+                    to="/technologies"
+                    className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
+                    onClick={closeMenu}
+                >
+                    {t('header.menu.technology')}
+                </NavLink>
+                <NavLink
+                    to="/donation"
+                    className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
+                    onClick={closeMenu}
+                >
+                    {t('header.menu.donation')}
+                </NavLink>
 
                 <div className="lang-switch">
                     <span
