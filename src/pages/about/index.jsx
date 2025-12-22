@@ -9,6 +9,9 @@ import start from '../../assets/sport/start.jpg';
 import withFamily from '../../assets/sport/with-family.jpg';
 import pth from '../../assets/sport/pth.jpg';
 import goal from '../../assets/sport/goal.mp4';
+import top12Vcvb from '../../assets/sport/top1-2-vcvb.jpg';
+import cbfc from '../../assets/sport/cbfc.jpg';
+import goalVcvb from '../../assets/sport/goal-vcvb.mp4';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 
 export default function About() {
@@ -22,7 +25,7 @@ export default function About() {
                     <div className="about-left">
                         <div className="about-img-wrapper">
                             <img src={phucImg} alt="About Phuc" />
-
+                            
                             <div className="social-links">
                                 <a href="https://github.com/phuchb2004" target="_blank" rel="noopener noreferrer">
                                     <FaGithub/>
@@ -85,18 +88,33 @@ export default function About() {
                         <p>{t('about.sport.description')}</p>
                     </div>
                     
-                    <div className="sport-media">
-                        <div className="sport-img">
-                            <img src={bu2fc} alt="BU2FC" />
-                            <img src={start} alt="lineup" />
-                            <img src={withFamily} alt="family" />
-                            <img src={pth} alt="brothers" />
-                        </div>
+                    <RevealOnScroll direction="right">
+                        <div className="sport-media">
+                            <div className="sport-img">
+                                <img src={bu2fc} alt="BU2FC" />
+                                <img src={start} alt="lineup" />
+                                <img src={withFamily} alt="family" />
+                                <img src={pth} alt="brothers" />
+                            </div>
 
-                        <div className="sport-video">
-                            <video src={goal} controls></video>
+                            <div className="sport-video">
+                                <video src={goal} controls></video>
+                            </div>
                         </div>
-                    </div>
+                    </RevealOnScroll>
+
+                    <RevealOnScroll direction="left">
+                        <div className="sport-media">
+                            <div className="sport-img">
+                                <img src={top12Vcvb} alt="top1-2" />
+                                <img src={cbfc} alt="cbfc" />
+                            </div>
+
+                            <div className="sport-video">
+                                <video src={goalVcvb} controls></video>
+                            </div>
+                        </div>
+                    </RevealOnScroll>                
                 </div>
             </RevealOnScroll>
         </div>
