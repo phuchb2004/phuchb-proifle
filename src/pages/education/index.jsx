@@ -1,27 +1,52 @@
 import './style.css';
 import { HomeOutlined } from '@ant-design/icons';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import hsg12 from '../../assets/hsg-12.jpg';
 import RevealOnScroll from '../../components/reveal-on-scroll';
+import { useTranslation } from 'react-i18next';
+import baseApi from '../../base-api/baseApi';
 
 export default function Education() {
+    const { t, i18n } = useTranslation();
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [certificate, setCertificate] = useState([]);
+    const currentLang = i18n.language.startsWith('en') ? 'en' : 'vi';
+
+    useEffect(() => {
+        const fetchCertificate = async () => {
+            try {
+                const res = await baseApi.get('/certificate');
+                setCertificate(res);
+                setLoading(false);
+            }
+            catch (error) {
+                console.error("Lỗi, không lấy được data Certificate", error);
+                setError(error.message);
+            }
+        }
+        fetchCertificate();
+    }, [])
+
+    if (loading) return <div className="loading-state">{t('experience.loading')}</div>;
+    if (error) return <div className="error-state">{error}</div>;
 
     return (
         <div className="education-container">
             <RevealOnScroll direction="left">
-                <h2 className="edu-title">Học vấn & Chứng chỉ</h2>
+                <h2 className="edu-title">{t('education.title.education')}</h2>
 
                 <div className="formal-education">
                     <div className="edu-card highschool">
                         <div className="card-content">
-                            <span className="edu-year">2019 - 2022</span>
+                            <span className="edu-year">{t('education.period.highschool')}</span>
                             <h3 className="school-header">
-                                <HomeOutlined /> Trường PT Vùng Cao Việt Bắc
+                                <HomeOutlined /> {t('education.schoolName.highschool')}
                             </h3>
                             <div className="achievement-block">
                                 <div className="achievement-info">
-                                    <h4>Thành tích nổi bật: </h4>
-                                    <p>Đạt danh hiệu Học sinh Giỏi năm lớp 12.</p>
+                                    <h4>{t('education.achievement.label')}</h4>
+                                    <p>{t('education.achievement.description')}</p>
                                 </div>
 
                                 <div className="achievement-img">
@@ -33,14 +58,14 @@ export default function Education() {
 
                     <div className="edu-card colleague">
                         <div className="card-content">
-                            <span className="edu-year">2023 - 2026</span>   
+                            <span className="edu-year">{t('education.period.colleague')}</span>   
                             <h3 className="school-header"> 
-                                <HomeOutlined /> Trường Đại học Phương Đông
+                                <HomeOutlined /> {t('education.schoolName.colleague')}
                             </h3>
-                            <p className="edu-major">Công nghệ thông tin & Truyền thông</p>
+                            <p className="edu-major">{t('education.major')}</p>
                             <ul className="edu-desc">
-                                <li>Tốt nghiệp loại Khá</li>
-                                <li>Đồ án: Shop quần áo</li>
+                                <li>{t('education.rating')}</li>
+                                <li>{t('education.project')}</li>
                             </ul>
                         </div>
                     </div>
@@ -48,23 +73,15 @@ export default function Education() {
             </RevealOnScroll>
             
             <RevealOnScroll direction="right">
-                <h3 className="certificate-title">Chứng chỉ chuyên môn</h3>
+                <h3 className="certificate-title">{t('education.title.certificate')}</h3>
 
                 <div className="certificate">
-                    <div className="certificate-item">
-                        <h4> SQL - Certificate of Completion </h4>
-                        <p> Codecademy - 6/2024 </p>
-                    </div>
-                    
-                    <div className="certificate-item">
-                        <h4> C++ Certificate of Completion </h4>
-                        <p> Codecademy - 7/2024 </p>
-                    </div>
-
-                    <div className="certificate-item">
-                        <h4> Java Course Certificate of Completion </h4>
-                        <p> Codecademy - 8/2024 </p>
-                    </div>
+                    {certificate.map((certi) => (
+                        <div className="certificate-item" key={ certi.certificateId }>
+                            <h4> {certi.title[currentLang]} </h4>
+                            <p> {certi.description} </p>
+                        </div>
+                    ))}
                 </div>
             </RevealOnScroll>
         </div>

@@ -63,6 +63,27 @@
             "tech": "Technologies:"
         }
     },
+    "education": {
+        "title": {
+            "education": "Education",
+            "certificate": "Certifications"
+        },
+        "period": {
+            "highschool": "2019-2022",
+            "colleague": "2023-2026"
+        },
+        "schoolName": {
+            "highschool": "Viet Bac Highlands High School",
+            "colleague": "Phuong Dong University"
+        },
+        "achievement": {
+            "label": "Outstanding Achievement:",
+            "description": "Achieved Excellent Student title in Grade 12."
+        },
+        "major": "Major: Information Technology",
+        "rating": "Degree Classification: Good",
+        "project": "Capstone Project: Clothing Store"
+    },
     "modal": {
         "contactEmail": {
             "title": "Contact Me",

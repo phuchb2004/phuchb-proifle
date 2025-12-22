@@ -63,6 +63,27 @@
             "tech": "Công nghệ:"
         }
     },
+    "education": {
+        "title": {
+            "education": "Học vấn cá nhân",
+            "certificate": "Chứng chỉ chuyên môn"
+        },
+        "period": {
+            "highschool": "2019-2022",
+            "colleague": "2023-2026"
+        },
+        "schoolName": {
+            "highschool": "Trường PT Vùng Cao Việt Bắc",
+            "colleague": "Trường Đại học Phương Đông"
+        },
+        "achievement": {
+            "label": "Thành tích nổi bật:",
+            "description": "Đạt danh hiệu Học sinh Giỏi năm lớp 12."
+        },
+        "major": "Chuyên ngành: Công nghệ thông tin",
+        "rating": "Tốt nghiệp loại Khá",
+        "project": "Đồ án: Shop quần áo"
+    },
     "modal": {
         "contactEmail": {
             "title": "Liên hệ",
