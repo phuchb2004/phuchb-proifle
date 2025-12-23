@@ -78,10 +78,16 @@ export default function Education() {
 
                 <div className="certificate">
                     {certificate.map((certi) => (
-                        <div className="certificate-item" key={ certi.certificateId }>
+                        <a 
+                            className="certificate-item"
+                            key={ certi.certificateId }
+                            href={ certi.certificateUrl }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <h4> {certi.title[currentLang]} </h4>
                             <p> {certi.description} </p>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </RevealOnScroll>

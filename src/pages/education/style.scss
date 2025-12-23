@@ -145,6 +145,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .certificate-item:hover {
