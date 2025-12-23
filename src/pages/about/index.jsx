@@ -3,16 +3,18 @@ import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { SiNextdotjs, SiVuedotjs, SiLaravel, SiDotnet } from 'react-icons/si';
+import RevealOnScroll from '../../components/reveal-on-scroll';
+/* images */
 import phucImg from '../../assets/sen.png';
 import bu2fc from '../../assets/sport/bu2fc.jpg';
-import start from '../../assets/sport/start.jpg';
 import withFamily from '../../assets/sport/with-family.jpg';
-import pth from '../../assets/sport/pth.jpg';
-import goal from '../../assets/sport/goal.mp4';
 import top12Vcvb from '../../assets/sport/top1-2-vcvb.jpg';
 import cbfc from '../../assets/sport/cbfc.jpg';
+import k6162 from '../../assets/sport/k6162.jpg';
+import wphong from '../../assets/sport/wphong.jpg';
+/* videos */
+import goal from '../../assets/sport/goal.mp4';
 import goalVcvb from '../../assets/sport/goal-vcvb.mp4';
-import RevealOnScroll from '../../components/reveal-on-scroll';
 
 export default function About() {
     const { t } = useTranslation();
@@ -80,6 +82,8 @@ export default function About() {
                 </div>
             </RevealOnScroll>
 
+            <div className="separate-line"></div>
+
             {/* Sport */}
             <RevealOnScroll direction="left">
                 <div className="about-sport">
@@ -91,30 +95,24 @@ export default function About() {
                     <RevealOnScroll direction="right">
                         <div className="sport-media">
                             <div className="sport-img">
-                                <img src={bu2fc} alt="BU2FC" />
-                                <img src={start} alt="lineup" />
-                                <img src={withFamily} alt="family" />
-                                <img src={pth} alt="brothers" />
-                            </div>
-
-                            <div className="sport-video">
-                                <video src={goal} controls></video>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-
-                    <RevealOnScroll direction="left">
-                        <div className="sport-media">
-                            <div className="sport-img">
                                 <img src={top12Vcvb} alt="top1-2" />
                                 <img src={cbfc} alt="cbfc" />
+                                <img src={bu2fc} alt="BU2FC" />
+                                <img src={withFamily} alt="family" />
+                                <img src={k6162} alt="k6162" />
+                                <img src={wphong} alt="wphong" />
                             </div>
 
                             <div className="sport-video">
-                                <video src={goalVcvb} controls></video>
+                                <h4 className="video-title">Một số bàn thắng hay</h4>
+
+                                <div className="video-grid">
+                                    <video src={goalVcvb} controls></video>
+                                    <video src={goal} controls></video>
+                                </div>
                             </div>
                         </div>
-                    </RevealOnScroll>                
+                    </RevealOnScroll>               
                 </div>
             </RevealOnScroll>
         </div>

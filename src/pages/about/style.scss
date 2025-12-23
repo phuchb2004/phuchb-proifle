@@ -65,12 +65,13 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
 
-.about-img-wrapper img {
-    width: 350px;
-    border-radius: 20px;
-    object-fit: cover;
+    img {
+        width: 100%;
+        max-width: 380px;
+        object-fit: cover;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
 }
 
 .social-links a {
@@ -109,6 +110,11 @@
     cursor: pointer;
 }
 
+/* Separator */
+.separate-line {
+    border: 1px solid $endeavour;
+}
+
 /* Sport */
 .about-sport {
     width: 100%;
@@ -118,46 +124,46 @@
 .sport-title {
     text-align: center;
     margin-bottom: 40px;
-}
 
-.sport-title h3 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: $endeavour;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: $endeavour;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-.sport-title p {
-    font-size: 1.1rem;
-    color: #000000;
-    font-style: italic;
+    p {
+        font-size: 1.1rem;
+        color: #000000;
+        font-style: italic;
+        margin: 0 auto;
+    }
 }
 
 .sport-media {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 30px;
+    gap: 60px;
 }
 
 .sport-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
 
-.sport-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
 
-.sport-img img:hover {
-    transform: scale(1.02);
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
 }
 
 .sport-video video {
@@ -168,51 +174,52 @@
     background-color: #000000;
     transition: transform 0.3s ease;
     max-width: 800px;
-}
 
-.sport-video video:hover {
-    transform: scale(1.02);
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    &:hover {
+        transform: scale(1.02);
     }
 }
 
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
+.video-title {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $endeavour;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background-color: $curious-blue;
+        border-radius: 2px;
     }
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
+    video {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        background-color: $dark;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
     }
 }
 
@@ -235,26 +242,22 @@
     .skills-grid {
         justify-content: center;
     }
- 
+
     .about-right h1 {
         font-size: 2.2rem;
     }
 
-    .sport-img {
+    .sport-img, .video-grid {
         grid-template-columns: 1fr;
         gap: 15px;
     }  
 
-    .sport-img img {
+    .sport-img img, .video-grid video {
         height: auto;
         aspect-ratio: 16/9;
     }
 
     .sport-title h3 {
-        font-size: 1.5rem;
-    }
-
-    .sport-video video {
-        width: 100%;
+        font-size: 1.8rem;
     }
 }
