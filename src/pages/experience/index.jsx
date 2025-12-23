@@ -33,7 +33,9 @@ export default function Experience() {
 
     return (
         <div className="experience-container">
-            <h2>{t('experience.title')}</h2>
+            <RevealOnScroll direction="left">
+                <h2>{t('experience.title')}</h2>
+            </RevealOnScroll>
 
             <div className="timeline-wrapper">
                 {exp.map((company) => (
