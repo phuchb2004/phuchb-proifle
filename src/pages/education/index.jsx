@@ -90,6 +90,7 @@ export default function Education() {
                                 <HomeOutlined /> {t('education.schoolName.colleague')}
                             </h3>
                             <p className="edu-major">{t('education.major')}</p>
+                            <p className="xuho-memo">{t('education.xuhoMemo')}</p>
                             <div className="university-image-container">
                                 <img src={xuho} alt="Ảnh tập thể lớp" />
                                 <img src={aexuho} alt="Anh em" />
