@@ -84,6 +84,18 @@ export default function About() {
 
             <div className="separate-line"></div>
 
+            {/* Strengths */}
+            <RevealOnScroll direction="right">
+                <div className="about-strengths">
+                    <div className="strengths-title">
+                        <h3>The manh cua toi</h3>
+                        <p>the manh...</p>
+                    </div>
+                </div>
+            </RevealOnScroll>
+
+            <div className="separate-line"></div>
+
             {/* Sport */}
             <RevealOnScroll direction="left">
                 <div className="about-sport">
@@ -104,7 +116,7 @@ export default function About() {
                             </div>
 
                             <div className="sport-video">
-                                <h4 className="video-title">Một số bàn thắng hay</h4>
+                                <h4 className="video-title">{t('about.sport.goal')}</h4>
 
                                 <div className="video-grid">
                                     <video src={goalVcvb} controls></video>

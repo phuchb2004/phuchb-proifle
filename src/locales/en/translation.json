@@ -53,7 +53,8 @@
         },
         "sport": {
             "title": "Sports Passion",
-            "description": "Memorable moments and outstanding achievements on the pitch"
+            "description": "Memorable moments and outstanding achievements on the pitch",
+            "goal": "Some impressive goals"
         }
     },
     "experience": {

@@ -53,7 +53,8 @@
         },
         "sport": {
             "title": "Đam mê thể thao",
-            "description": "Những khoảnh khắc và thành tích đáng nhớ trên sân cỏ"
+            "description": "Những khoảnh khắc và thành tích đáng nhớ trên sân cỏ",
+            "goal": "Một số bàn thắng ấn  tượng"
         }
     },
     "experience": {
