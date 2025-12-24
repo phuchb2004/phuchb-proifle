@@ -2,7 +2,7 @@
 
 .footer-container {
     background-color: $endeavour;
-    color: #FFFFFF;
+    color: $white;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -21,11 +21,11 @@
 }
 
 .address-title {
-    color: #FFFFFF;
+    color: $white;
 }
 
 .address-title h3 {
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 15px;
     font-size: 1.1rem;
     font-weight: 700;
@@ -47,11 +47,11 @@
 }
 
 .connect-title {
-    color: #FFFFFF;
+    color: $white;
 }
 
 .connect-title h3 {
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 15px;
     font-size: 1.1rem;
     font-weight: 700;
@@ -63,13 +63,13 @@
 }
 
 .socials a {
-    color: #FFFFFF;
+    color: $white;
     font-size: 24px;
     display: flex;
 }
 
 .socials a:hover {
-    color: #f0f0f0;
+    color: $lighter-grey;
     transform: translateY(-3px);
 }
 
@@ -83,11 +83,11 @@
 }
 
 .contact-title {
-    color: #FFFFFF;
+    color: $white;
 }
 
 .contact-title h3 {
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 15px;
     font-size: 1.1rem;
     font-weight: 700;

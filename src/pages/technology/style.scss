@@ -30,7 +30,7 @@
 
 .tech-desc {
     font-size: 1.1rem;
-    color: #000000;
+    color: $black;
     max-width: 700px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
@@ -80,14 +80,14 @@
     margin: 0 0 10px 0;
     font-size: 1.25rem;
     font-weight: 600px;
-    color: #000000;
+    color: $black;
 }
 
 .tech-category {
     display: inline-block;
     padding: 6px 14px;
-    background-color: #bae8e8;
-    color: #000000;
+    background-color: $light-cyan;
+    color: $black;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
@@ -101,7 +101,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    color: #000000;
+    color: $black;
 }
 
 @keyframes spin {

@@ -30,14 +30,20 @@ export default function Technology() {
 
     const getTechIcon = (name) => {
         const lowerName = name?.toLowerCase() || "";
-        
-        if (lowerName.includes('react')) return <FaReact color="#61DAFB" />;
-        if (lowerName.includes('node')) return <FaNodeJs color="#339933" />;
-        if (lowerName.includes('mongo')) return <SiMongodb color="#47A248" />;
-        if (lowerName.includes('aws')) return <SiAwsamplify color="#FF9900" />;
+        const colors = {
+            react: "#61DAFB",
+            node: "#339933",
+            mongo: "#47A248",
+            aws: "#FF9900",
+            default: "#cbd5e1"
+        };
+
+        if (lowerName.includes('react')) return <FaReact color={colors.react} />;
+        if (lowerName.includes('node')) return <FaNodeJs color={colors.node} />;
+        if (lowerName.includes('mongo')) return <SiMongodb color={colors.mongo} />;
+        if (lowerName.includes('aws')) return <SiAwsamplify color={colors.aws} />;
         if (lowerName.includes('render')) return <SiRender className="icon-render" />;
-        if (lowerName.includes('js') || lowerName.includes('script')) return <SiJavascript color="#F7DF1E" />;
-        return <FaCode color="#888" />;
+        return <FaCode color={colors.default} />;
     };
 
     if (loading) return <Loading/>;

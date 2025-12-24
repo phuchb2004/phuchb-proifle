@@ -14,7 +14,7 @@
 }
 
 .modal-content {
-    background-color: #FFFFFF;
+    background-color: $white;
     padding: 30px;
     border-radius: 12px;
     width: 90%;
@@ -28,20 +28,20 @@
     right: 15px;
     background: transparent;
     border: none;
-    color: #000000;
+    color: $black;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .modal-content h2 {
     margin-top: 0;
-    color: #000000;
+    color: $black;
     text-align: center;
 }
 
 .modal-content p {
     text-align: center;
-    color: #000000;
+    color: $black;
     margin-bottom: 20px;
     font-size: 0.9rem;
 }
@@ -54,14 +54,14 @@
     display: block;
     margin-bottom: 6px;
     font-weight: 600;
-    color: #000000;
+    color: $black;
     font-size: 0.9rem;
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid $black;
     border-radius: 5px;
     font-size: 0.8rem;
 }
@@ -76,7 +76,7 @@
     width: 100%;
     padding: 12px;
     background-color: $curious-blue;
-    color: #FFFFFF;
+    color: $white;
     border: none;
     border-radius: 6px;
     font-size: 0.9rem;
@@ -90,19 +90,19 @@
 }
 
 .submit-btn:disabled {
-    background-color: #ccc;
+    background-color: $light-blue-grey;
     cursor: not-allowed;
 }
 
 .msg-success {
-    color: #7dd87d;
+    color: $pastel-green;
     text-align: center;
     margin-top: 10px;
     font-weight: 600;
 }
 
 .msg-error {
-    color: #f83e4b;
+    color: $vibrant-red;
     text-align: center;
     margin-top: 10px;
     font-weight: 600;

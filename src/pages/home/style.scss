@@ -30,7 +30,7 @@
 }
 
 .highlight-text {
-    color: #8594e4;
+    color: $endeavour;
     font-weight: 700;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .button-contact {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: $white;
+    color: $black;
     border: none;
     padding: 12px 24px;
     border-radius: 5px;
@@ -56,7 +56,7 @@
 
 .button-cv {
     background-color: $curious-blue;
-    color: #FFFFFF;
+    color: $white;
     border: none;
     padding: 12px 24px;
     border-radius: 5px;

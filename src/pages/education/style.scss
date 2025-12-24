@@ -55,7 +55,7 @@
 .edu-year {
     display: inline-block;
     background-color: rgba($endeavour, 0.1);
-    color: $dark;
+    color: $black;
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -96,7 +96,7 @@
 
 .xuho-memo {
     font-size: 1rem;
-    color: $dark;
+    color: $black;
     font-weight: 500;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -240,7 +240,7 @@
 
     p {
         font-size: 0.95rem;
-        color: $dark;
+        color: $black;
         line-height: 1.5;
         flex-grow: 1;
     }
@@ -253,7 +253,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    color: $dark;
+    color: $black;
 }
 
 @media (max-width: 768px) {
