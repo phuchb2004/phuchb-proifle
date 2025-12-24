@@ -1,4 +1,4 @@
-@import '/src/styles/variable';
+@use '/src/styles/variable' as *;
 
 .home-container {
     background-color: $white;

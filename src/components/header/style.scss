@@ -1,4 +1,4 @@
-@import '/src/styles/_variable.scss';
+@use '/src/styles/variable' as *;
 
 .header-container {
     background-color: #FFFFFF;

@@ -1,4 +1,4 @@
-@import '/src/styles/variable';
+@use '/src/styles/variable' as *;
 
 .tech-container {
     max-width: 1200px;
