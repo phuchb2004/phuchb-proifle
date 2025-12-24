@@ -45,7 +45,9 @@ export default function Education() {
         <div className="education-container">
             <RevealOnScroll direction="left">
                 <h2 className="edu-title">{t('education.title.education')}</h2>
+            </RevealOnScroll>
 
+            <RevealOnScroll direction="right">
                 <div className="formal-education">
                     <div className="edu-card highschool">
                         <div className="card-content">
