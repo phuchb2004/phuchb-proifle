@@ -9,22 +9,22 @@
 .tech-header {
     text-align: center;
     margin-bottom: 50px;
-}
 
-.tech-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: $endeavour;
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $endeavour;
 
-    &::after {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 4px;
-        background-color: $endeavour;
-        margin: 15px auto 0;
-        border-radius: 2px;
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: $endeavour;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
     }
 }
 
@@ -58,12 +58,12 @@
     cursor: pointer;
     text-decoration: none;
     color: inherit;
-}
 
-.tech-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    border-color: rgba(0, 0, 0, 0.1);
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
 }
 
 .tech-icon-wrapper {
@@ -102,11 +102,6 @@
     align-items: center;
     font-size: 1.2rem;
     color: $black;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 @media (max-width: 768px) {

@@ -18,23 +18,23 @@
     align-items: center;
     flex: 1;
     min-width: 200px;
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: center;
+    }
 }
 
 .address-title {
     color: $white;
-}
 
-.address-title h3 {
-    color: $white;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.address-section p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: center;
+    h3 {
+        color: $white;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
 }
 
 /* Connect */
@@ -48,30 +48,31 @@
 
 .connect-title {
     color: $white;
-}
 
-.connect-title h3 {
-    color: $white;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    font-weight: 700;
+    h3 {
+        color: $white;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
 }
 
 .socials {
     display: flex;
     gap: 15px;
+
+    a {
+        color: $white;
+        font-size: 24px;
+        display: flex;
+
+        &:hover {
+            color: $lighter-grey;
+            transform: translateY(-3px);
+        }
+    }
 }
 
-.socials a {
-    color: $white;
-    font-size: 24px;
-    display: flex;
-}
-
-.socials a:hover {
-    color: $lighter-grey;
-    transform: translateY(-3px);
-}
 
 /* Contact */
 .contact-section {
@@ -80,29 +81,29 @@
     align-items: center;
     flex: 1;
     min-width: 200px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
 }
 
 .contact-title {
     color: $white;
-}
 
-.contact-title h3 {
-    color: $white;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.contact-section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-section ul li {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: center;
+    h3 {
+        color: $white;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
 }
 
 @media (max-width: 768px) {

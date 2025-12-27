@@ -20,6 +20,19 @@
     width: 90%;
     max-width: 450px;
     position: relative;
+
+    h2 {
+        margin-top: 0;
+        color: $black;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: $black;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
 }
 
 .close-btn {
@@ -33,43 +46,44 @@
     transition: color 0.3s;
 }
 
-.modal-content h2 {
-    margin-top: 0;
-    color: $black;
-    text-align: center;
-}
-
-.modal-content p {
-    text-align: center;
-    color: $black;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-}
-
 .form-group {
     margin-bottom: 15px;
-}
 
-.form-group label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: $black;
-    font-size: 0.9rem;
-}
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: $black;
+        font-size: 0.9rem;
+    }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid $black;
-    border-radius: 5px;
-    font-size: 0.8rem;
-}
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $black;
+        border-radius: 5px;
+        font-size: 0.8rem;
 
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: $curious-blue;
-    box-shadow: 0 0 0 3px rgba(133, 148, 228, 0.2);
+        &:focus {
+            outline: none;
+            border-color: $curious-blue;
+            box-shadow: 0 0 0 3px rgba(133, 148, 228, 0.2);
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $black;
+        border-radius: 5px;
+        font-size: 0.8rem;
+
+        &:focus {
+            outline: none;
+            border-color: $curious-blue;
+            box-shadow: 0 0 0 3px rgba(133, 148, 228, 0.2);
+        }
+    }
 }
 
 .submit-btn {
@@ -82,16 +96,16 @@
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
-}
 
-.submit-btn:hover {
-    background-color: $endeavour;
-    transform: translateY(-1px);
-}
+    &:hover {
+        background-color: $endeavour;
+        transform: translateY(-1px);
+    }
 
-.submit-btn:disabled {
-    background-color: $light-blue-grey;
-    cursor: not-allowed;
+    &:disabled {
+        background-color: $light-blue-grey;
+        cursor: not-allowed;
+    }
 }
 
 .msg-success {

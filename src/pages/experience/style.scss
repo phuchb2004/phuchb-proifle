@@ -83,11 +83,11 @@
     margin-bottom: 35px;
     border: 1px solid $curious-blue;
     transition: all 0.3s ease;
-}
 
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: $endeavour;
+    &:hover {
+        transform: translateY(-5px);
+        border-color: $endeavour;
+    }
 }
 
 .project-header {

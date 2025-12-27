@@ -9,24 +9,24 @@
     gap: 50px;
 }
 
-.home-left, .home-right {
-    flex: 1;
-}
-
 /* Left Section */
-.home-left h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: $endeavour;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
+.home-left {
+    flex: 1;
 
-.home-left p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 90%;
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: $endeavour;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
 }
 
 .highlight-text {
@@ -47,11 +47,11 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-}
 
-.button-contact:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px);
+    &:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-1px);
+    }
 }
 
 .button-cv {
@@ -62,22 +62,65 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-}
 
-.button-cv:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px);
+    &:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-1px);
+    }
 }
 
 /* Right Section */
 .home-right {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+
+    img {
+        width: 400px;
+    }
 }
 
-.home-right img {
-    width: 400px;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-up {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
 }
 
 @media (max-width: 768px) {

@@ -13,23 +13,23 @@
     opacity: 0;
     transition: all 1.2s ease-out;
     will-change: opacity, transform;
-}
 
-.reveal-section.up {
-    transform: translateY(50px);
-}
+    &.up {
+        transform: translateY(50px);
+    }
 
-.reveal-section.right {
-    transform: translateX(-100px);
-}
+    &.right {
+        transform: translateX(-100px);
+    }
 
-.reveal-section.left {
-    transform: translateX(100px);
-}
+    &.left {
+        transform: translateX(100px);
+    }
 
-.reveal-section.is-visible {
-    opacity: 1;
-    transform: translate(0, 0);
+    &.is-visible {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
 /* General */
@@ -41,23 +41,27 @@
     width: 100%;
 }
 
-.about-left, .about-right {
+.about-left {
     flex: 1;
 }
 
-.about-right h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: $endeavour;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
+.about-right {
+    flex: 1;
 
-.about-right p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: $black;
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: $endeavour;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: $black;
+    }
 }
 
 .about-img-wrapper {
@@ -74,14 +78,16 @@
     }
 }
 
-.social-links a {
-    font-size: 2rem;
-    color: $black;
-    padding: 0 10px;
-}
+.social-links {
+    a {
+        font-size: 2rem;
+        color: $black;
+        padding: 0 10px;
 
-.social-links a:hover {
-    color: $curious-blue;
+        &:hover {
+            color: $curious-blue;
+        }
+    }
 }
 
 .tech-stack h3 {
